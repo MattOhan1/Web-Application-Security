@@ -1,14 +1,23 @@
+/* Base styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: #ffffff;
+    text-align: center;
 }
 
-header, nav, main, footer {
+header, footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
     padding: 20px;
-    margin: 10px;
+    text-align: center;
+}
+
+nav {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
 }
 
 nav ul {
@@ -18,19 +27,44 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 nav ul li a {
+    color: #ffffff;
     text-decoration: none;
-    color: #0056b3;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
+    color: #dddddd;
     text-decoration: underline;
 }
 
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+article {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+p {
+    line-height: 1.6;
+}
+
 footer {
-    text-align: center;
     font-size: 0.8em;
 }
