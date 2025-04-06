@@ -1,16 +1,18 @@
-/* styles.css - Modern Look for Web Application Security */
+/* styles.css - Fresh Design with Color */
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f6f8;
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #e0eafc, #cfdef3);
   color: #333;
 }
 
+/* Navigation Bar */
 nav {
-  background-color: #0d1b2a;
+  background-color: #002855;
   padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 nav ul {
@@ -30,78 +32,87 @@ nav a {
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+  padding: 10px 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #1b263b;
+  background-color: #0d47a1;
 }
 
+/* Main Content Styling */
 main {
   max-width: 900px;
   margin: 40px auto;
-  padding: 20px;
   background-color: #ffffff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
+/* Headings */
 h1 {
   font-size: 32px;
-  color: #1b263b;
+  color: #002855;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 h2 {
-  color: #0d1b2a;
+  color: #003f88;
   margin-top: 30px;
 }
 
 p {
-  line-height: 1.7;
+  line-height: 1.8;
+  margin-top: 10px;
 }
 
+/* Lists */
 ul {
   margin-left: 20px;
-  padding-left: 10px;
 }
 
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #e0e1e2;
+  background-color: #e3eaf4;
   margin-top: 40px;
   color: #555;
   font-size: 14px;
   border-top: 1px solid #ccc;
 }
 
+/* Forms and Buttons */
 button {
-  background-color: #1b263b;
+  background-color: #003f88;
   color: white;
   border: none;
-  padding: 10px 16px;
+  padding: 10px 18px;
   font-size: 15px;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
   margin-top: 15px;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #415a77;
+  background-color: #0059b3;
 }
 
 input[type="text"] {
-  padding: 8px;
+  padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
   width: 100%;
   margin-top: 8px;
+  box-sizing: border-box;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
   margin-right: 8px;
 }
+
