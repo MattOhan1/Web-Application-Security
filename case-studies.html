@@ -1,38 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Studies in Web Application Security</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Case Studies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #2a2a2a;
+    }
+    p {
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="threats.html">Threats</a></li>
-    <li><a href="best-practices.html">Best Practices</a></li>
-    <li><a href="references.html">References</a></li>
-    <li><a href="case-studies.html">Case Studies</a></li>
-    <li><a href="tools.html">Tools</a></li>
-    <li><a href="quiz.html">Quiz</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="threats.html">Threats</a></li>
+      <li><a href="best-practices.html">Best Practices</a></li>
+      <li><a href="references.html">References</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+  </nav>
 
-    <article>
-        <h1>Web Application Security Case Studies</h1>
-        <p>Explore real-world scenarios where web application security was crucial in mitigating threats and breaches.</p>
-        <section>
-            <h2>Case Study 1: The SQL Injection Attack</h2>
-            <p>Description of an SQL injection attack on a major retailer, including how the breach occurred, the impact, and the corrective actions taken.</p>
-        </section>
-        <section>
-            <h2>Case Study 2: XSS Attack on a Social Media Platform</h2>
-            <p>Detailed analysis of a cross-site scripting (XSS) attack, the vulnerabilities exploited, and the steps taken to secure the platform against future attacks.</p>
-        </section>
-    </article>
-    <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
-    </footer>
+  <main>
+    <h1>📚 Case Studies in Web Application Security</h1>
+
+    <section>
+      <h2>1. 🏦 Equifax Breach (2017)</h2>
+      <p>
+        In 2017, Equifax suffered a data breach affecting over 140 million people. Attackers exploited a known vulnerability in the Apache Struts web framework that had not been patched.
+        <br><br>
+        <strong>Why it happened:</strong> Failure to update and patch vulnerable software.<br>
+        <strong>What was exposed:</strong> Social Security numbers, birth dates, addresses, and more.<br>
+        <strong>How it could’ve been prevented:</strong> Regular software updates and vulnerability scanning.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. 📧 Yahoo Data Breach (2013–2014)</h2>
+      <p>
+        Yahoo disclosed that 3 billion user accounts were compromised in two separate breaches. Attackers used forged cookies and gained access to user data including names, emails, and hashed passwords.
+        <br><br>
+        <strong>Why it happened:</strong> Weak internal controls and poor password hashing practices.<br>
+        <strong>What was exposed:</strong> Names, emails, phone numbers, dates of birth, hashed passwords.<br>
+        <strong>How it could’ve been prevented:</strong> Stronger encryption, better monitoring, and response systems.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Matthew Ohanaja</p>
+  </footer>
 </body>
 </html>
