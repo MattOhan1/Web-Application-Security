@@ -1,37 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Best Practices in Web Application Security</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Best Practices</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #2c2c2c;
+    }
+    ul {
+      margin-left: 20px;
+    }
+  </style>
 </head>
 <body>
-   <nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="threats.html">Threats</a></li>
-    <li><a href="best-practices.html">Best Practices</a></li>
-    <li><a href="references.html">References</a></li>
-    <li><a href="case-studies.html">Case Studies</a></li>
-    <li><a href="tools.html">Tools</a></li>
-    <li><a href="quiz.html">Quiz</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="threats.html">Threats</a></li>
+      <li><a href="best-practices.html">Best Practices</a></li>
+      <li><a href="references.html">References</a></li>
+      <li><a href="case-studies.html">Case Studies</a></li>
+      <li><a href="tools.html">Tools</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+    </ul>
+  </nav>
 
-    <article>
-        <h1>Security Best Practices for Web Applications</h1>
-        <p>Implementing robust security measures is crucial in protecting web applications from potential threats. This page discusses best practices that developers and administrators should follow.</p>
-        <h2>Secure Coding Practices</h2>
-        <p>Developers should follow secure coding guidelines to prevent common vulnerabilities such as SQL injection and XSS.</p>
-        <h2>Regular Updates and Patch Management</h2>
-        <p>Keeping software up-to-date is crucial to protect against known vulnerabilities and exploits.</p>
-        <h2>Use of Security Tools</h2>
-        <p>Integrating tools like Web Application Firewalls (WAFs) can help detect and block security threats.</p>
-    </article>
-    <footer>
-        <p>&copy; 2025 Matthew Ohanaja. All rights reserved.</p>
-    </footer>
+  <main>
+    <h1>🛡️ Web Application Security Best Practices</h1>
+
+    <section>
+      <h2>1. 🔑 Use Strong Passwords & MFA</h2>
+      <p>
+        Always enforce strong password requirements for users and admins. Add Multi-Factor Authentication (MFA) for an extra layer of protection.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. 🧹 Sanitize and Validate User Input</h2>
+      <p>
+        Never trust user input. Always validate and sanitize data to prevent SQL injection, XSS, and other attacks.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. 🔒 Use HTTPS Everywhere</h2>
+      <p>
+        Protect data in transit by enabling HTTPS across your entire website. It encrypts user information and prevents man-in-the-middle attacks.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. 🧱 Keep Software and Libraries Updated</h2>
+      <p>
+        Outdated software often has known vulnerabilities. Regularly update your frameworks, libraries, and server software to stay secure.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. 🚧 Implement Proper Access Controls</h2>
+      <p>
+        Limit what users and admins can access based on roles. Make sure users can't access pages or data they're not supposed to.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. 🔐 Secure Your Authentication System</h2>
+      <p>
+        Use secure password hashing (like bcrypt), limit login attempts, and implement session timeouts to protect user accounts.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. 📦 Use Content Security Policy (CSP)</h2>
+      <p>
+        CSP helps prevent XSS attacks by telling the browser which sources of content are trusted — like only allowing scripts from your own site.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Matthew Ohanaja</p>
+  </footer>
 </body>
 </html>
 
