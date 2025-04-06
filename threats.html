@@ -4,6 +4,20 @@
   <meta charset="UTF-8" />
   <title>Common Threats</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    main {
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      color: #3a3a3a;
+    }
+    p {
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -19,24 +33,59 @@
   </nav>
 
   <main>
-    <h1>Common Web Application Security Threats</h1>
+    <h1>🔐 Common Web Application Security Threats</h1>
 
     <section>
-      <h2>1. Cross-Site Scripting (XSS)</h2>
+      <h2>1. 🧪 Cross-Site Scripting (XSS)</h2>
       <p>
-        XSS attacks occur when attackers inject malicious scripts into content from otherwise trusted websites. These scripts can run in the user’s browser and steal sensitive data like cookies or session tokens.
+        Attackers inject malicious scripts into trusted websites. These scripts run in a user’s browser and can steal cookies, session tokens, or other sensitive data.
       </p>
     </section>
 
     <section>
-      <h2>2. SQL Injection</h2>
+      <h2>2. 🛠️ SQL Injection</h2>
       <p>
-        SQL injection happens when attackers insert malicious SQL queries into input fields to access or modify database information. This can lead to unauthorized access to user data or even deletion of data.
+        A type of attack where hackers insert SQL queries into input fields to gain unauthorized access to data or make changes to the database.
+        <strong>Prevent it by:</strong>
+        <ul>
+          <li>Using prepared statements</li>
+          <li>Validating all user inputs</li>
+        </ul>
       </p>
     </section>
 
     <section>
-      <h2>3. Cross-Site Request Forgery (CSRF)</h2>
+      <h2>3. 🎭 Cross-Site Request Forgery (CSRF)</h2>
       <p>
-        CSRF tricks users into performing actions they didn’t intend to by exploiting their authenticated session. This is especially dangerous for actions like changing account settings or submitting payments.
-     
+        This trick forces users to perform actions they didn't intend while logged in. For example, changing their password or making a transaction without knowing it.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. 🚫 Broken Authentication</h2>
+      <p>
+        If login systems aren’t secure, attackers can hijack accounts using leaked passwords, session IDs, or brute-force methods.
+      </p>
+    </section>
+
+    <section>
+      <h2>5. 🔓 Insecure Direct Object References (IDOR)</h2>
+      <p>
+        This flaw allows users to access things they shouldn’t — like another user’s data — by guessing or modifying a URL parameter or ID.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. 🔍 Security Misconfiguration</h2>
+      <p>
+        Happens when servers, databases, or web apps are set up with default settings, outdated software, or open directories — making them easy targets.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Matthew Ohanaja</p>
+  </footer>
+</body>
+</html>
+
