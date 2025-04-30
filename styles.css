@@ -20,10 +20,12 @@ nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav li {
-  display: inline-block;
   margin: 0 15px;
 }
 
@@ -115,12 +117,8 @@ input[type="radio"],
 input[type="checkbox"] {
   margin-right: 8px;
 }
-/* Base styles (desktop default) */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+
+/* ========== MEDIA QUERIES FOR RESPONSIVE DESIGN ========== */
 
 /* Large tablets/small laptops (768px – 1024px) */
 @media screen and (max-width: 1024px) {
@@ -151,8 +149,11 @@ body {
   }
 
   nav ul li {
-    display: block;
     margin: 10px 0;
+  }
+
+  main {
+    padding: 20px;
   }
 }
 
@@ -162,16 +163,25 @@ body {
     padding: 10px;
   }
 
+  h1 {
+    font-size: 20px;
+  }
+
   nav ul {
     flex-direction: column;
+    padding: 0;
   }
 
   nav ul li {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 
-  h1 {
-    font-size: 20px;
+  main {
+    padding: 15px;
+  }
+
+  ul {
+    padding-left: 20px;
   }
 
   table {
@@ -180,7 +190,13 @@ body {
     display: block;
   }
 
-  input, button {
+  input,
+  button {
     width: 100%;
+  }
+
+  footer {
+    font-size: 13px;
+    padding: 15px;
   }
 }
