@@ -78,7 +78,7 @@ ul {
 
 /* Footer */
 footer {
-  text-align: center;
+  text-align: left;
   padding: 20px;
   background-color: #e3eaf4;
   margin-top: 40px;
@@ -173,11 +173,11 @@ input[type="checkbox"] {
   }
 
   nav ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   main {
-    padding: 15px;
+    padding: 20px;
   }
 
   ul {
@@ -196,7 +196,9 @@ input[type="checkbox"] {
   }
 
   footer {
+    text-align: center;
     font-size: 13px;
     padding: 15px;
   }
 }
+
